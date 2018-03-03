@@ -1,0 +1,101 @@
+/* 
+
+## Style Hints: 
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+body{
+	margin-left:10%;
+	margin-right:15%;
+	font-size: 12px;
+	line-height: 17px;
+	font-family: "times new roman", serif;
+	color: #656565;
+}
+a:hover{
+	color: #20222a;
+}
+header{
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin: 3% 0% 2% 0;
+}
+
+header > img{
+	border: none;
+}
+
+#container{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	margin-left:5%;
+}
+img{
+	border:solid 2px gray;
+	margin:2px;
+
+}
+
+@media all and (max-width: 768){
+
+body{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	margin:0 auto;
+	font-size: 12px;
+	line-height: 17px;
+	font-family: "times new roman", serif;
+	color: #656565;
+	width:100vw;
+}
+a:hover{
+	color: #20222a;
+}
+header{
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin: 3% 0% 2% 0;
+}
+
+img{
+	border:solid 3px gray;
+	margin:2px;
+}
+
+footer{
+	margin-left:10%;
+}
+
+#container{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	margin-left:5%;
+	width:100%;
+}
+
+#main{
+	display:flex;
+	flex-direction: column;
+	width:50%;	
+}
+	#banner{
+		display:flex;
+		flex:auto;
+		justify-content: center;
+		width:100%;
+		height:auto;
+	}
+}
